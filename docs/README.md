@@ -1,6 +1,6 @@
-# `qa-multiagents-rag` — Technical Documentation Hub
+# `ai-multiagents-assistant` — Technical Documentation Hub
 
-Welcome to the comprehensive engineering documentation for **`qa-multiagents-rag`**, an enterprise-grade, multi-agent Retrieval-Augmented Generation (RAG) and conversational AI platform.
+Welcome to the comprehensive engineering documentation for **`ai-multiagents-assistant`**, an enterprise-grade, multi-agent Retrieval-Augmented Generation (RAG) and conversational AI platform.
 
 The system combines **Hybrid RAG** (dense vector search + Neo4j Knowledge Graph traversal + cross-encoder reranking), **multi-agent orchestration** with Model Context Protocol (MCP) tools, **durable workflow execution** via Temporal, **multi-modal document ingestion**, **NVIDIA NeMo Guardrails & PII redaction**, and a **white-label React/TypeScript web client** with full OpenTelemetry observability.
 
@@ -39,7 +39,7 @@ The system combines **Hybrid RAG** (dense vector search + Neo4j Knowledge Graph 
 ## Repository Directory Blueprint
 
 ```text
-qa-multiagents-rag/
+ai-multiagents-assistant/
 ├── client/                     # React + TypeScript + Vite SPA frontend
 │   ├── config/                 # Multi-tenant white-label overrides (carraro, default, mirai, necto)
 │   ├── public/                 # Static assets (logo.svg, icon.svg)
