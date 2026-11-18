@@ -1,0 +1,715 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-06-27 16:45+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/PrivacyPage.tsx:97
+#~ msgid "privacy.index.description"
+#~ msgstr "隐私政策章节"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:31
+#~ msgid "changelogs.page"
+#~ msgstr "更新日志"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:17
+#~ msgid "changelogs.title"
+#~ msgstr "更新日志 {0}"
+
+#. placeholder {0}: model.model
+#. placeholder {1}: model.provider
+#. placeholder {2}: Math.min(Math.ceil((model.tot_tokens_timeframe / model.tokens_limit) * 100), 100)
+#: src/components/sections/ChatTextbox.tsx:98
+msgid "{0} <0>{1}, usage {2}%</0>"
+msgstr "{0} <0>{1}, 使用率 {2}%</0>"
+
+#: src/routes/AppSidebar.tsx:98
+msgid "{key, select, workarea {Work Area} information {Information} other {Unknown}}"
+msgstr "{key, select, workarea {工作区} information {信息} other {未知}}"
+
+#. placeholder {0}: model.tot_tokens_timeframe
+#. placeholder {1}: model.tokens_limit
+#: src/components/sections/TokenUsageDialog.tsx:57
+msgid "<0>{0} of {1} tokens</0><1>{percentage}%</1>"
+msgstr "<0>{0}/{1} 个令牌</0><1>{percentage}%</1>"
+
+#. placeholder {0}: user?.tot_token_limit
+#: src/components/sections/TokenUsageDialog.tsx:87
+msgid "<0>{totalUsage} of {0} tokens</0><1>{totalUsagePercentage}%</1>"
+msgstr "<0>{totalUsage}/{0} 个令牌</0><1>{totalUsagePercentage}%</1>"
+
+#: src/routes/chats/item/ChatPage.tsx:301
+#: src/routes/ask/AskPage.tsx:296
+msgid "<0>Please ask to the administration to update your expiration date, until then you won't be able to sent more messages.</0><1>You can find more information manual your account expiration date in the \"User Data\" section of your settings.</1>"
+msgstr "<0>请联系管理员更新您的过期日期，在此之前您无法发送更多消息。</0><1>您可以在“用户数据”设置部分找到有关帐户过期日期的更多信息。</1>"
+
+#: src/routes/chats/item/ChatPage.tsx:279
+#: src/routes/ask/AskPage.tsx:274
+msgid "<0>Please wait for the reset period or ask to the administration to increase your token allocation, until then you won't be able to sent more messages.</0><1>You can find more informations manual tokens consumtion in the \"Tokens Consumption\" section of your settings.</1>"
+msgstr "<0>请等待重置周期或请求管理员增加您的令牌分配，在此之前您无法发送更多消息。</0><1>您可以在“令牌使用情况”设置部分找到有关令牌消耗的更多信息。</1>"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ManualPage.tsx:133
+msgid "manual.page"
+msgstr "关于"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ManualPage.tsx:98
+msgid "manual.index.title"
+msgstr "关于索引"
+
+#: src/components/sections/UserProfileDialog.tsx:142
+msgid "Access your user profile details"
+msgstr "访问您的用户档案详细信息"
+
+#: src/components/sections/TokenUsageDialog.tsx:83
+msgid "Account tokens usage"
+msgstr "账户令牌使用情况"
+
+#: src/routes/documents/DocumentsTableCard.tsx:40
+#: src/routes/chats/ChatsTableCard.tsx:33
+msgid "Actions"
+msgstr "操作"
+
+#: src/components/sections/UserProfileDialog.tsx:255
+msgid "App name"
+msgstr "应用名称"
+
+#: src/components/ui/custom/confirm-dialog.tsx:26
+msgid "Are you sure you want to delete {objectName}?"
+msgstr "确定要删除 {objectName} 吗？"
+
+#: src/components/ui/custom/confirm-dialog.tsx:33
+msgid "Are you sure you want to log out of {objectName}?"
+msgstr "确定要退出 {objectName} 吗？"
+
+#: src/routes/NotFoundPage.tsx:14
+msgid "Back to Home"
+msgstr "返回首页"
+
+#: src/components/ui/custom/confirm-dialog.tsx:97
+#: src/components/sections/ChatTextbox.tsx:76
+msgid "Cancel"
+msgstr "取消"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:136
+msgid "changelog.page"
+msgstr "更新日志"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:95
+msgid "changelog.index.title"
+msgstr "更新日志索引"
+
+#: src/components/forms/chat/NewChatForm.tsx:54
+#: src/components/forms/chat/NewChatForm.tsx:56
+msgid "Chat name"
+msgstr "聊天名称"
+
+#: src/routes/chats/ChatsTableCard.tsx:79
+#: src/routes/chats/ChatsPage.tsx:68
+msgid "Chats"
+msgstr "聊天"
+
+#: src/routes/chats/item/ChatPage.tsx:287
+#: src/routes/chats/item/ChatPage.tsx:309
+#: src/routes/ask/AskPage.tsx:282
+#: src/routes/ask/AskPage.tsx:304
+#: src/components/ui/custom/confirm-dialog.tsx:99
+#: src/components/ui/custom/confirm-dialog.tsx:100
+#: src/components/sections/UserProfileDialog.tsx:360
+#: src/components/sections/DocumentSelectorDialog.tsx:154
+#: src/components/sections/ChatFeedbackDialog.tsx:169
+msgid "Continue"
+msgstr "继续"
+
+#: src/components/sections/ChatMessages.tsx:31
+#: src/components/sections/ChatMessages.tsx:149
+msgid "Copy"
+msgstr "复制"
+
+#: src/routes/chats/NewChatDialog.tsx:48
+#: src/routes/chats/NewChatCard.tsx:36
+msgid "Create"
+msgstr "创建"
+
+#: src/routes/chats/NewChatDialog.tsx:33
+#: src/routes/chats/NewChatCard.tsx:20
+msgid "Create new chat"
+msgstr "创建新聊天"
+
+#: src/routes/AppSidebar.tsx:170
+msgid "Dark Theme"
+msgstr "深色主题"
+
+#: src/components/ui/custom/confirm-dialog.tsx:25
+msgid "Delete {objectName}"
+msgstr "删除 {objectName}"
+
+#: src/components/ui/custom/confirm-dialog.tsx:27
+msgid "Deleted {objectName} correctly"
+msgstr "{objectName} 已成功删除"
+
+#: src/components/sections/TokenUsageDialog.tsx:81
+msgid "Details on the usage of tokens"
+msgstr "令牌使用详细信息"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:100
+msgid "Did the message answer your question in a complete and informative way?"
+msgstr "此消息是否完整且信息丰富地回答了您的问题？"
+
+#: src/components/sections/ChatTextbox.tsx:153
+msgid "Docs"
+msgstr "文档"
+
+#. placeholder {0}: row.original.filename
+#: src/routes/documents/DocumentsTableCard.tsx:60
+msgid "Document preview {0}"
+msgstr "文档预览 {0}"
+
+#: src/components/sections/UserProfileDialog.tsx:204
+msgid "Document search"
+msgstr "文档搜索"
+
+#: src/components/sections/ChatMessages.tsx:92
+msgid "Document sources:"
+msgstr "文档来源："
+
+#: src/routes/documents/DocumentPage.tsx:41
+msgid "Documents"
+msgstr "文档"
+
+#. placeholder {0}: selectedDocuments.length > 0 && `(${selectedDocuments.length})`
+#: src/components/sections/ChatTextbox.tsx:120
+#: src/components/sections/ChatTextbox.tsx:127
+msgid "Documents {0}"
+msgstr "文档 {0}"
+
+#: src/routes/chats/ChatsPage.tsx:28
+#: src/routes/ask/AskPage.tsx:232
+#: src/components/sections/ChatDocuments.tsx:121
+msgid "Documents list"
+msgstr "文档列表"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:176
+msgid "Documents processed and uploaded correctly!"
+msgstr "文档已成功上传并处理"
+
+#: src/components/sections/UserProfileDialog.tsx:288
+msgid "Domain"
+msgstr "域名"
+
+#: src/components/sections/UserProfileDialog.tsx:67
+msgid "Domain required"
+msgstr "需要域名"
+
+#: src/components/sections/ChatMessages.tsx:35
+msgid "Edit"
+msgstr "编辑"
+
+#: src/routes/login/LoginPage.tsx:70
+#: src/components/sections/UserProfileDialog.tsx:151
+msgid "Email"
+msgstr "电子邮箱"
+
+#: src/routes/login/LoginPage.tsx:60
+msgid "Enter your credentials below to log in to your account."
+msgstr "请输入以下信息以登录您的帐户。"
+
+#: src/routes/NotFoundPage.tsx:10
+msgid "Error 404: Page not found"
+msgstr "错误 404：页面未找到"
+
+#: src/components/ui/custom/document-viewer.tsx:39
+#: src/components/ui/custom/document-viewer.tsx:55
+msgid "Error loading the document"
+msgstr "加载文档时出错"
+
+#: src/components/sections/ChatMessages.tsx:155
+msgid "Expand"
+msgstr "展开"
+
+#: src/components/sections/ChatMessages.tsx:141
+#: src/components/sections/ChatFeedbackDialog.tsx:88
+msgid "Feedback"
+msgstr "反馈"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:165
+msgid "Feedback correctly submitted"
+msgstr "反馈已成功提交"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:49
+#: src/components/sections/DocumentSelectorDialog.tsx:90
+msgid "File Name"
+msgstr "文件名"
+
+#: src/routes/documents/DocumentsTableCard.tsx:33
+#: src/routes/documents/DocumentsTableCard.tsx:87
+msgid "filename"
+msgstr "文件名"
+
+#: src/components/sections/ChatTextbox.tsx:112
+msgid "Focus"
+msgstr "聚焦"
+
+#: src/components/ui/custom/data-table-pagination.tsx:74
+msgid "Go to first page"
+msgstr "跳转到第一页"
+
+#: src/components/ui/custom/data-table-pagination.tsx:101
+msgid "Go to last page"
+msgstr "跳转到最后一页"
+
+#: src/components/ui/custom/data-table-pagination.tsx:92
+msgid "Go to next page"
+msgstr "跳转到下一页"
+
+#: src/components/ui/custom/data-table-pagination.tsx:83
+msgid "Go to previous page"
+msgstr "跳转到上一页"
+
+#: src/components/sections/UserProfileDialog.tsx:267
+#: src/components/sections/UserProfileDialog.tsx:273
+msgid "Groups"
+msgstr "群组"
+
+#. placeholder {0}: user?.name
+#: src/components/sections/ChatHeader.tsx:15
+msgid "Hello {0}, how can I help you today?"
+msgstr "您好，{0}，今天我能如何帮助您？"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/PrivacyPage.tsx:78
+msgid "privacy.index"
+msgstr "索引"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:78
+msgid "changelog.index"
+msgstr "索引"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ManualPage.tsx:81
+msgid "manual.index"
+msgstr "索引"
+
+#: src/components/sections/ChatMessages.tsx:135
+msgid "Information"
+msgstr "信息"
+
+#: src/components/sections/MessageInfoDialog.tsx:16
+msgid "Information of the selected message"
+msgstr "所选消息的信息"
+
+#. placeholder {0}: import.meta.env.VITE_NAME
+#: src/components/sections/ChatTextbox.tsx:171
+msgid "Keep in mind that {0} uses AI. Always double check important information."
+msgstr "请注意，{0} 使用人工智能。请始终仔细核实重要信息。"
+
+#: src/routes/AppSidebar.tsx:178
+msgid "Language"
+msgstr "语言"
+
+#: src/routes/AppSidebar.tsx:166
+msgid "Light Theme"
+msgstr "浅色主题"
+
+#: src/components/sections/ChatDocuments.tsx:122
+msgid "List of documents referenced in the conversation"
+msgstr "对话中引用的文档列表"
+
+#: src/routes/chats/ChatsTableCard.tsx:82
+msgid "List of past conversations"
+msgstr "以往对话列表"
+
+#: src/routes/documents/DocumentsTableCard.tsx:130
+msgid "List of uploaded documents"
+msgstr "已上传文档列表"
+
+#. placeholder {0}: assistantMessage.metadata.llm_model
+#: src/components/sections/MessageInfoDialog.tsx:23
+msgid "LLM model: {0}"
+msgstr "语言模型：{0}"
+
+#: src/routes/login/LoginPage.tsx:59
+msgid "Log in to your account"
+msgstr "登录您的帐户"
+
+#: src/components/ui/custom/confirm-dialog.tsx:32
+msgid "Log out {objectName}"
+msgstr "退出 {objectName}"
+
+#: src/components/ui/custom/confirm-dialog.tsx:34
+msgid "Log out {objectName} completed correctly"
+msgstr "{objectName} 已成功退出"
+
+#: src/routes/login/LoginPage.tsx:96
+msgid "Login"
+msgstr "登录"
+
+#: src/routes/AppSidebar.tsx:210
+msgid "Logout"
+msgstr "退出登录"
+
+#: src/components/sections/UserProfileDialog.tsx:64
+msgid "Mail is not valid"
+msgstr "邮箱地址无效"
+
+#: src/components/sections/UserProfileDialog.tsx:64
+msgid "Mail required"
+msgstr "需要邮箱"
+
+#: src/components/sections/ChatMessages.tsx:29
+#: src/components/sections/ChatMessages.tsx:147
+msgid "Message copied to clipboard"
+msgstr "消息已复制到剪贴板"
+
+#: src/components/sections/MessageInfoDialog.tsx:15
+msgid "Message information"
+msgstr "消息信息"
+
+#: src/components/sections/ChatTextbox.tsx:137
+msgid "Message is over the maximum allowed length"
+msgstr "消息超过允许的最大长度"
+
+#. placeholder {0}: "500"
+#: src/components/sections/ChatFeedbackDialog.tsx:41
+msgid "Message is over the maximum allowed length ({0} characters)"
+msgstr "消息超过允许的最大长度（{0} 字符）"
+
+#. placeholder {0}: userMessage.mode
+#: src/components/sections/MessageInfoDialog.tsx:21
+msgid "Mode: {0, select, chat {Chat} search {Search} focus {Focus} other {Unknown}}"
+msgstr "模式：{0, select, chat {聊天} search {搜索} focus {聚焦} other {未知}}"
+
+#: src/components/sections/TokenUsageDialog.tsx:28
+#: src/components/sections/ChatTextbox.tsx:146
+msgid "Model"
+msgstr "模型"
+
+#: src/components/sections/TokenUsageDialog.tsx:93
+msgid "Models tokens usage"
+msgstr "模型令牌使用情况"
+
+#: src/routes/chats/ChatsTableCard.tsx:25
+#: src/routes/chats/ChatsTableCard.tsx:64
+#: src/components/sections/UserProfileDialog.tsx:164
+msgid "Name"
+msgstr "名称"
+
+#: src/components/sections/UserProfileDialog.tsx:65
+#: src/components/forms/chat/NewChatForm.tsx:19
+msgid "Name required"
+msgstr "需要名称"
+
+#: src/routes/chats/NewChatDialog.tsx:32
+#: src/routes/chats/NewChatCard.tsx:19
+#: src/routes/chats/ChatsPage.tsx:81
+msgid "New chat"
+msgstr "新聊天"
+
+#: src/components/sections/TokenUsageDialog.tsx:37
+msgid "Next reset"
+msgstr "下次重置"
+
+#: src/components/ui/custom/multi-select.tsx:95
+#: src/components/ui/custom/data-table.tsx:77
+msgid "No results."
+msgstr "无结果。"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:110
+msgid "No selected documents, focus mode requires at least one selected document"
+msgstr "未选择文档，聚焦模式需要至少选择一个文档"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:112
+msgid "No selected documents, the search will consider all documents available"
+msgstr "未选择文档，搜索将考虑所有可用文档"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:155
+#: src/components/sections/ChatFeedbackDialog.tsx:157
+msgid "Other comments"
+msgstr "其他评论"
+
+#. placeholder {0}: table.getState().pagination.pageIndex + 1
+#. placeholder {1}: table.getPageCount()
+#. placeholder {2}: table.getSelectedRowModel().rows.length
+#: src/components/ui/custom/data-table-pagination.tsx:57
+msgid "Page {0} of {1} {2, plural, =0 {} one {(# selected)} other {(# selected)}}"
+msgstr "第 {0}/{1} 页 {2, plural, =0 {} one {(# 已选择)} other {(# 已选择)}}"
+
+#. placeholder {0}: pages.length
+#: src/components/ui/custom/document-viewer.tsx:126
+msgid "Page {pageNumber} of {0}"
+msgstr "第 {pageNumber}/{0} 页"
+
+#: src/routes/login/LoginPage.tsx:83
+msgid "Password"
+msgstr "密码"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/PrivacyPage.tsx:134
+msgid "privacy.page"
+msgstr "隐私政策"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/PrivacyPage.tsx:95
+msgid "privacy.index.title"
+msgstr "隐私政策索引"
+
+#: src/components/sections/UserProfileDialog.tsx:141
+msgid "Profile"
+msgstr "个人资料"
+
+#: src/components/sections/UserProfileDialog.tsx:356
+msgid "Profile correctly updated"
+msgstr "个人资料更新成功"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:89
+msgid "Provide a feedback to improve the conversation"
+msgstr "提供反馈以改进对话"
+
+#: src/components/sections/TokenUsageDialog.tsx:31
+msgid "Provider"
+msgstr "服务提供商"
+
+#: src/components/sections/ChatTextbox.tsx:109
+msgid "QA"
+msgstr "对话"
+
+#. placeholder {0}: userMessage.content
+#: src/components/sections/MessageInfoDialog.tsx:20
+msgid "Question: {0}"
+msgstr "问题：{0}"
+
+#: src/routes/chats/ChatsPage.tsx:78
+#: src/routes/ask/AskPage.tsx:347
+msgid "Recent chats"
+msgstr "最近聊天"
+
+#: src/components/sections/ChatMessages.tsx:159
+msgid "Regenerate"
+msgstr "重新生成"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:137
+msgid "Relevant sources"
+msgstr "相关来源"
+
+#. placeholder {0}: userMessage.documents.length
+#. placeholder {1}: userMessage.documents.map(d => <li key={d.filename}>{ d.filename }</li>)
+#: src/components/sections/MessageInfoDialog.tsx:26
+msgid "Requested sources:<0>{0, plural, =0 {<1>None</1>} other {{1}}}</0>"
+msgstr "请求的来源：<0>{0, plural, =0 {<1>无</1>} other {{1}}}</0>"
+
+#: src/components/ui/custom/data-table-pagination.tsx:36
+msgid "Rows"
+msgstr "行"
+
+#: src/components/ui/custom/data-table-filter.tsx:23
+msgid "Search by {columnName}..."
+msgstr "按 {columnName} 搜索..."
+
+#: src/components/ui/custom/multi-select.tsx:93
+msgid "Search by {objectName}..."
+msgstr "按 {objectName} 搜索..."
+
+#: src/components/ui/custom/multi-select.tsx:82
+msgid "Select {objectName}"
+msgstr "选择 {objectName}"
+
+#: src/components/sections/UserProfileDialog.tsx:66
+msgid "Select at least one group"
+msgstr "至少选择一个群组"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:140
+msgid "Select documents"
+msgstr "选择文档"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:141
+msgid "Select documents to work on"
+msgstr "选择要处理的文档"
+
+#: src/components/sections/ChatTextbox.tsx:105
+msgid "Select your mode"
+msgstr "选择您的模式"
+
+#: src/components/sections/ChatTextbox.tsx:93
+msgid "Select your model"
+msgstr "选择您的模型"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:115
+#: src/components/sections/ChatTextbox.tsx:140
+msgid "Selected documents are over the maximum allowed length"
+msgstr "所选文档超过允许的最大数量"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:96
+msgid "Selected documents:"
+msgstr "已选择的文档："
+
+#: src/routes/AppSidebar.tsx:150
+msgid "Settings"
+msgstr "设置"
+
+#: src/routes/chats/item/ChatPage.tsx:168
+#: src/routes/ask/AskPage.tsx:173
+msgid "Something went wrong, retry or change question."
+msgstr "出现错误，请重试或更换问题。"
+
+#: src/components/sections/UserProfileDialog.tsx:361
+#: src/components/sections/ChatFeedbackDialog.tsx:170
+msgid "Submit"
+msgstr "提交"
+
+#: src/components/ui/custom/success-alert.tsx:12
+msgid "Success"
+msgstr "成功"
+
+#: src/routes/AppSidebar.tsx:162
+msgid "System Theme"
+msgstr "系统主题"
+
+#: src/routes/chats/ChatsTableCard.tsx:36
+msgid "the conversation"
+msgstr "对话"
+
+#: src/routes/AppSidebar.tsx:156
+msgid "Theme"
+msgstr "主题"
+
+#: src/routes/AppSidebar.tsx:203
+#: src/components/sections/TokenUsageDialog.tsx:80
+msgid "Tokens Consumption"
+msgstr "令牌使用"
+
+#: src/components/sections/TokenUsageDialog.tsx:34
+msgid "Tokens reset period"
+msgstr "令牌重置周期"
+
+#: src/components/sections/TokenUsageDialog.tsx:49
+msgid "Tokens usage"
+msgstr "令牌使用"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:56
+msgid "Total document tokens"
+msgstr "总文档令牌数"
+
+#. placeholder {0}: selectedDocuments.reduce((a, b) => a + b.totalTokens, 0)
+#. placeholder {1}: Math.floor((selectedModel?.context_window ?? 0) / 4)
+#: src/components/sections/DocumentSelectorDialog.tsx:95
+msgid "Total selected documents tokens: {0} out of {1}"
+msgstr "所选文档的令牌总数：{0}/{1}"
+
+#: src/components/sections/UserProfileDialog.tsx:301
+msgid "Total tokens limit"
+msgstr "令牌总限制"
+
+#: src/components/sections/UserProfileDialog.tsx:314
+msgid "Total tokens reset period"
+msgstr "令牌总重置周期"
+
+#: src/components/sections/UserProfileDialog.tsx:327
+msgid "Trial expiry date"
+msgstr "试用到期日期"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:118
+msgid "Understandable answer"
+msgstr "易于理解的回答"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:181
+msgid "Upload"
+msgstr "上传"
+
+#: src/components/sections/UserProfileDialog.tsx:221
+msgid "Upload common"
+msgstr "上传公共文件"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:92
+msgid "Upload documents"
+msgstr "上传文档"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:93
+msgid "Upload documents to process"
+msgstr "上传待处理文档"
+
+#: src/components/sections/UserProfileDialog.tsx:238
+msgid "Upload private"
+msgstr "上传私有文件"
+
+#. placeholder {0}: value.length
+#: src/components/ui/custom/styled-dropzone.tsx:40
+msgid "Upload your files by dragging them here or clicking to browse your files.{0, plural, =0 {} other {. Will reset the current selection}}"
+msgstr "通过拖动到此处或点击浏览上传文件。{0, plural, =0 {} other {. 将重置当前选择}}"
+
+#: src/routes/documents/DocumentsTableCard.tsx:127
+msgid "Uploaded documents"
+msgstr "已上传文档"
+
+#. placeholder {0}: assistantMessage.sources?.length ?? 0
+#. placeholder {1}: assistantMessage.sources?.map(d => <li key={d.filename}>{ d.filename }</li>)
+#: src/components/sections/MessageInfoDialog.tsx:40
+msgid "Used sources:<0>{0, plural, =0 {<1>None</1>} other {{1}}}</0>"
+msgstr "已使用来源：<0>{0, plural, =0 {<1>无</1>} other {{1}}}</0>"
+
+#. placeholder {0}: assistantMessage.metadata.input_tokens
+#. placeholder {1}: assistantMessage.metadata.output_tokens
+#: src/components/sections/MessageInfoDialog.tsx:22
+msgid "Used tokens: {0} (input), {1} (output)"
+msgstr "使用的令牌：{0}（输入），{1}（输出）"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:99
+msgid "Useful answer"
+msgstr "有用的回答"
+
+#: src/routes/AppSidebar.tsx:207
+msgid "user"
+msgstr "用户"
+
+#: src/routes/AppSidebar.tsx:197
+msgid "User Data"
+msgstr "用户数据"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:119
+msgid "Was the provided answer easy to understand?"
+msgstr "所提供的答案是否易于理解？"
+
+#: src/components/sections/ChatTextbox.tsx:160
+msgid "Web"
+msgstr "网页"
+
+#: src/components/sections/UserProfileDialog.tsx:187
+msgid "Web search"
+msgstr "网页搜索"
+
+#: src/components/sections/ChatMessages.tsx:105
+msgid "Web sources:"
+msgstr "网页来源："
+
+#: src/components/sections/ChatFeedbackDialog.tsx:138
+msgid "Were the sources found relevant to your questions?"
+msgstr "找到的来源是否与您的问题相关？"
+
+#: src/components/sections/ChatTextbox.tsx:75
+msgid "You are editing a message, any following messages from the selected will be deleted."
+msgstr "您正在编辑一条消息，被选中消息之后的内容将被删除。"
+
+#: src/routes/chats/item/ChatPage.tsx:298
+#: src/routes/ask/AskPage.tsx:293
+msgid "You have run out of time!"
+msgstr "您的时间已用完！"
+
+#: src/routes/chats/item/ChatPage.tsx:276
+#: src/routes/ask/AskPage.tsx:271
+msgid "You have run out of tokens!"
+msgstr "您的令牌已用完！"

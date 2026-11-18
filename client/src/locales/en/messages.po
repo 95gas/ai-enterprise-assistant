@@ -1,0 +1,826 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-06-27 16:45+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/PrivacyPage.tsx:97
+#~ msgid "privacy.index.description"
+#~ msgstr "Privacy Policy Sections"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:31
+#~ msgid "changelogs.page"
+#~ msgstr "Changelogs"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:17
+#~ msgid "changelogs.title"
+#~ msgstr "Changelogs {0}"
+
+#. placeholder {0}: model.model
+#. placeholder {1}: model.provider
+#. placeholder {2}: Math.min(Math.ceil((model.tot_tokens_timeframe / model.tokens_limit) * 100), 100)
+#: src/components/sections/ChatTextbox.tsx:101
+msgid "{0} <0>{1}, usage {2}%</0>"
+msgstr "{0} <0>{1}, usage {2}%</0>"
+
+#: src/routes/AppSidebar.tsx:98
+msgid "{key, select, workarea {Work Area} information {Information} other {Unknown}}"
+msgstr "{key, select, workarea {Work Area} information {Information} other {Unknown}}"
+
+#. placeholder {0}: model.tot_tokens_timeframe
+#. placeholder {1}: model.tokens_limit
+#: src/components/sections/TokenUsageDialog.tsx:57
+msgid "<0>{0} of {1} tokens</0><1>{percentage}%</1>"
+msgstr "<0>{0} of {1} tokens</0><1>{percentage}%</1>"
+
+#. placeholder {0}: user?.tot_token_limit
+#: src/components/sections/TokenUsageDialog.tsx:87
+msgid "<0>{totalUsage} of {0} tokens</0><1>{totalUsagePercentage}%</1>"
+msgstr "<0>{totalUsage} of {0} tokens</0><1>{totalUsagePercentage}%</1>"
+
+#: src/routes/chats/item/ChatPage.tsx:298
+msgid "<0>Please ask an administration to update your expiration date, until then you won't be able to sent more messages.</0><1>You can find more information about your account expiration date in the \"User Data\" section of your settings.</1>"
+msgstr "<0>Please ask an administration to update your expiration date, until then you won't be able to sent more messages.</0><1>You can find more information about your account expiration date in the \"User Data\" section of your settings.</1>"
+
+#: src/routes/ask/AskPage.tsx:293
+msgid "<0>Please ask to the administration to update your expiration date, until then you won't be able to sent more messages.</0><1>You can find more information about your account expiration date in the \"User Data\" section of your settings.</1>"
+msgstr "<0>Please ask to the administration to update your expiration date, until then you won't be able to sent more messages.</0><1>You can find more information about your account expiration date in the \"User Data\" section of your settings.</1>"
+
+#: src/routes/chats/item/ChatPage.tsx:301
+#: src/routes/ask/AskPage.tsx:296
+#~ msgid "<0>Please ask to the administration to update your expiration date, until then you won't be able to sent more messages.</0><1>You can find more information manual your account expiration date in the \"User Data\" section of your settings.</1>"
+#~ msgstr "<0>Please ask to the administration to update your expiration date, until then you won't be able to sent more messages.</0><1>You can find more information manual your account expiration date in the \"User Data\" section of your settings.</1>"
+
+#: src/routes/chats/item/ChatPage.tsx:276
+msgid "<0>Please wait for the reset period or ask an administrator to increase your tokens allocation, until then you won't be able to sent more messages.</0><1>You can find more informations about tokens consumption in the \"Tokens Consumption\" section of your settings.</1>"
+msgstr "<0>Please wait for the reset period or ask an administrator to increase your tokens allocation, until then you won't be able to sent more messages.</0><1>You can find more informations about tokens consumption in the \"Tokens Consumption\" section of your settings.</1>"
+
+#: src/routes/ask/AskPage.tsx:271
+msgid "<0>Please wait for the reset period or ask to the administration to increase your token allocation, until then you won't be able to sent more messages.</0><1>You can find more informations about tokens consumtion in the \"Tokens Consumption\" section of your settings.</1>"
+msgstr "<0>Please wait for the reset period or ask to the administration to increase your token allocation, until then you won't be able to sent more messages.</0><1>You can find more informations about tokens consumtion in the \"Tokens Consumption\" section of your settings.</1>"
+
+#: src/routes/chats/item/ChatPage.tsx:279
+#: src/routes/ask/AskPage.tsx:274
+#~ msgid "<0>Please wait for the reset period or ask to the administration to increase your token allocation, until then you won't be able to sent more messages.</0><1>You can find more informations manual tokens consumtion in the \"Tokens Consumption\" section of your settings.</1>"
+#~ msgstr "<0>Please wait for the reset period or ask to the administration to increase your token allocation, until then you won't be able to sent more messages.</0><1>You can find more informations manual tokens consumtion in the \"Tokens Consumption\" section of your settings.</1>"
+
+#: src/components/sections/UserProfileDialog.tsx:142
+msgid "Access your user profile details"
+msgstr "Access your user profile details"
+
+#: src/components/sections/TokenUsageDialog.tsx:83
+msgid "Account tokens usage"
+msgstr "Account tokens usage"
+
+#: src/routes/documents/DocumentsTableCard.tsx:154
+#: src/routes/chats/ChatsTableCard.tsx:46
+msgid "Actions"
+msgstr "Actions"
+
+#: src/components/sections/UserProfileDialog.tsx:255
+#~ msgid "App name"
+#~ msgstr "App name"
+
+#: src/components/ui/custom/confirm-dialog.tsx:26
+msgid "Are you sure you want to delete {objectName}?"
+msgstr "Are you sure you want to delete {objectName}?"
+
+#: src/components/ui/custom/confirm-dialog.tsx:33
+msgid "Are you sure you want to log out of ASK?"
+msgstr "Are you sure you want to log out of ASK?"
+
+#: src/routes/NotFoundPage.tsx:14
+msgid "Back to Home"
+msgstr "Back to Home"
+
+#: src/components/ui/custom/confirm-dialog.tsx:97
+#: src/components/sections/ChatTextbox.tsx:79
+msgid "Cancel"
+msgstr "Cancel"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:136
+msgid "changelog.page"
+msgstr "Changelog"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:95
+msgid "changelog.index.title"
+msgstr "Changelog Index"
+
+#: src/components/sections/ChatTextbox.tsx:100
+#~ msgid "Chat"
+#~ msgstr "Chat"
+
+#: src/components/forms/chat/NewChatForm.tsx:54
+#: src/components/forms/chat/NewChatForm.tsx:56
+msgid "Chat name"
+msgstr "Chat name"
+
+#: src/routes/chats/ChatsTableCard.tsx:87
+#: src/routes/chats/ChatsPage.tsx:68
+msgid "Chats"
+msgstr "Chats"
+
+#: src/components/ui/custom/data-table-expand.tsx:25
+msgid "Collapse all"
+msgstr "Collapse all"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:193
+msgid "Common"
+msgstr "Common"
+
+#: src/routes/chats/item/ChatPage.tsx:284
+#: src/routes/chats/item/ChatPage.tsx:306
+#: src/routes/ask/AskPage.tsx:279
+#: src/routes/ask/AskPage.tsx:301
+#: src/components/ui/custom/confirm-dialog.tsx:99
+#: src/components/ui/custom/confirm-dialog.tsx:100
+#: src/components/sections/UserProfileDialog.tsx:360
+#: src/components/sections/DocumentSelectorDialog.tsx:307
+#: src/components/sections/ChatFeedbackDialog.tsx:169
+msgid "Continue"
+msgstr "Continue"
+
+#: src/components/sections/ChatMessages.tsx:31
+#: src/components/sections/ChatMessages.tsx:151
+msgid "Copy"
+msgstr "Copy"
+
+#: src/routes/chats/NewChatDialog.tsx:48
+#: src/routes/chats/NewChatCard.tsx:36
+msgid "Create"
+msgstr "Create"
+
+#: src/routes/chats/NewChatDialog.tsx:33
+#: src/routes/chats/NewChatCard.tsx:20
+msgid "Create new chat"
+msgstr "Create new chat"
+
+#: src/routes/AppSidebar.tsx:170
+msgid "Dark theme"
+msgstr "Dark theme"
+
+#: src/components/ui/custom/confirm-dialog.tsx:25
+msgid "Delete {objectName}"
+msgstr "Delete {objectName}"
+
+#: src/components/ui/custom/confirm-dialog.tsx:27
+msgid "Deleted {objectName} correctly"
+msgstr "Deleted {objectName} correctly"
+
+#: src/components/sections/TokenUsageDialog.tsx:81
+msgid "Details on the usage of tokens"
+msgstr "Details on the usage of tokens"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:100
+msgid "Did the message answer your question in a complete and informative way?"
+msgstr "Did the message answer your question in a complete and informative way?"
+
+#: src/components/sections/ChatTextbox.tsx:154
+msgid "Docs"
+msgstr "Docs"
+
+#: src/routes/documents/DocumentsTableCard.tsx:60
+#~ msgid "Document preview {0}"
+#~ msgstr "Document preview {0}"
+
+#: src/components/sections/MessageInfoDialog.tsx:21
+#~ msgid "Document retrieval: {0, select, true {Active} false {Not active} other {Unknown}}"
+#~ msgstr "Document retrieval: {0, select, true {Active} false {Not active} other {Unknown}}"
+
+#: src/components/sections/UserProfileDialog.tsx:204
+msgid "Document search"
+msgstr "Document search"
+
+#: src/components/sections/ChatMessages.tsx:94
+msgid "Document sources:"
+msgstr "Document sources:"
+
+#: src/routes/documents/DocumentsTableCard.tsx:83
+msgid "Document view"
+msgstr "Document view"
+
+#: src/routes/documents/DocumentPage.tsx:41
+msgid "Documents"
+msgstr "Documents"
+
+#. placeholder {0}: selectedDocuments.length > 0 && `(${selectedDocuments.length})`
+#: src/components/sections/ChatTextbox.tsx:126
+msgid "Documents {0}"
+msgstr "Documents {0}"
+
+#: src/routes/chats/ChatsPage.tsx:28
+#: src/routes/ask/AskPage.tsx:232
+#: src/components/sections/ChatDocuments.tsx:121
+msgid "Documents list"
+msgstr "Documents list"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:176
+msgid "Documents processed and uploaded correctly!"
+msgstr "Documents processed and uploaded correctly!"
+
+#: src/components/sections/UserProfileDialog.tsx:288
+msgid "Domain"
+msgstr "Domain"
+
+#: src/components/sections/UserProfileDialog.tsx:67
+msgid "Domain required"
+msgstr "Domain required"
+
+#: src/routes/login/LoginPage.tsx:70
+#: src/components/sections/UserProfileDialog.tsx:151
+msgid "E-mail"
+msgstr "E-mail"
+
+#: src/components/sections/UserProfileDialog.tsx:64
+msgid "E-mail is not valid"
+msgstr "E-mail is not valid"
+
+#: src/components/sections/UserProfileDialog.tsx:64
+msgid "E-mail required"
+msgstr "E-mail required"
+
+#: src/components/sections/ChatMessages.tsx:35
+msgid "Edit"
+msgstr "Edit"
+
+#: src/routes/login/LoginPage.tsx:60
+msgid "Enter your company credentials to log in to ASK."
+msgstr "Enter your company credentials to log in to ASK."
+
+#: src/routes/NotFoundPage.tsx:10
+msgid "Error 404: Page not found"
+msgstr "Error 404: Page not found"
+
+#: src/components/ui/custom/document-viewer.tsx:39
+#: src/components/ui/custom/document-viewer.tsx:55
+msgid "Error loading the document"
+msgstr "Error loading the document"
+
+#: src/components/sections/ChatMessages.tsx:157
+msgid "Expand"
+msgstr "Expand"
+
+#: src/components/ui/custom/data-table-expand.tsx:29
+msgid "Expand all"
+msgstr "Expand all"
+
+#: src/components/sections/ChatMessages.tsx:143
+#: src/components/sections/ChatFeedbackDialog.tsx:88
+msgid "Feedback"
+msgstr "Feedback"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:165
+msgid "Feedback correctly submitted"
+msgstr "Feedback correctly submitted"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:49
+#: src/components/sections/DocumentSelectorDialog.tsx:90
+#~ msgid "File Name"
+#~ msgstr "File Name"
+
+#: src/routes/documents/DocumentsTableCard.tsx:33
+#: src/routes/documents/DocumentsTableCard.tsx:87
+#~ msgid "filename"
+#~ msgstr "filename"
+
+#: src/components/sections/ChatTextbox.tsx:115
+msgid "Focus"
+msgstr "Focus"
+
+#: src/components/ui/custom/data-table-pagination.tsx:74
+msgid "Go to first page"
+msgstr "Go to first page"
+
+#: src/components/ui/custom/data-table-pagination.tsx:101
+msgid "Go to last page"
+msgstr "Go to last page"
+
+#: src/components/ui/custom/data-table-pagination.tsx:92
+msgid "Go to next page"
+msgstr "Go to next page"
+
+#: src/components/ui/custom/data-table-pagination.tsx:83
+msgid "Go to previous page"
+msgstr "Go to previous page"
+
+#: src/components/sections/UserProfileDialog.tsx:267
+#: src/components/sections/UserProfileDialog.tsx:273
+msgid "Groups"
+msgstr "Groups"
+
+#. placeholder {0}: user?.name ? getFirstName(user.name) : "Guest"
+#: src/components/sections/ChatHeader.tsx:21
+msgid "Hello {0}, how can I help you today?"
+msgstr "Hello {0}, how can I help you today?"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/PrivacyPage.tsx:78
+msgid "privacy.index"
+msgstr "Index"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ManualPage.tsx:81
+msgid "manual.index"
+msgstr "Index"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ChangelogsPage.tsx:78
+msgid "changelog.index"
+msgstr "Index"
+
+#: src/components/sections/ChatMessages.tsx:137
+msgid "Information"
+msgstr "Information"
+
+#: src/components/sections/MessageInfoDialog.tsx:16
+msgid "Information of the selected message"
+msgstr "Information of the selected message"
+
+#: src/routes/login/LoginPage.tsx:16
+#~ msgid "Invalid e-mail address"
+#~ msgstr "Invalid e-mail address"
+
+#: src/components/sections/UserProfileDialog.tsx:57
+#~ msgid "Invalid email address."
+#~ msgstr "Invalid email address."
+
+#. placeholder {0}: import.meta.env.VITE_NAME
+#: src/components/sections/ChatTextbox.tsx:172
+msgid "Keep in mind that {0} uses AI. Always double check important information."
+msgstr "Keep in mind that {0} uses AI. Always double check important information."
+
+#: src/routes/AppSidebar.tsx:178
+msgid "Language"
+msgstr "Language"
+
+#: src/routes/AppSidebar.tsx:166
+msgid "Light theme"
+msgstr "Light theme"
+
+#: src/components/sections/ChatDocuments.tsx:122
+msgid "List of documents referenced in the conversation"
+msgstr "List of documents referenced in the conversation"
+
+#: src/routes/chats/ChatsTableCard.tsx:90
+msgid "List of past conversations"
+msgstr "List of past conversations"
+
+#: src/routes/documents/DocumentsTableCard.tsx:253
+msgid "List of uploaded documents"
+msgstr "List of uploaded documents"
+
+#. placeholder {0}: assistantMessage.metadata.llm_model
+#: src/components/sections/MessageInfoDialog.tsx:23
+msgid "LLM model: {0}"
+msgstr "LLM model: {0}"
+
+#: src/routes/login/LoginPage.tsx:96
+#~ msgid "Log in"
+#~ msgstr "Log in"
+
+#: src/routes/login/LoginPage.tsx:59
+msgid "Log in to your account"
+msgstr "Log in to your account"
+
+#: src/components/ui/custom/confirm-dialog.tsx:32
+msgid "Log out user '{objectName}'"
+msgstr "Log out user '{objectName}'"
+
+#: src/components/ui/custom/confirm-dialog.tsx:34
+msgid "Log out user '{objectName}' completed correctly."
+msgstr "Log out user '{objectName}' completed correctly."
+
+#: src/routes/login/LoginPage.tsx:96
+msgid "Login"
+msgstr "Login"
+
+#: src/routes/AppSidebar.tsx:210
+msgid "Logout"
+msgstr "Logout"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ManualPage.tsx:133
+msgid "manual.page"
+msgstr "Manual"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/ManualPage.tsx:98
+msgid "manual.index.title"
+msgstr "Manual index"
+
+#: src/components/sections/ChatMessages.tsx:29
+#: src/components/sections/ChatMessages.tsx:149
+msgid "Message copied to clipboard"
+msgstr "Message copied to clipboard"
+
+#: src/components/sections/MessageInfoDialog.tsx:15
+msgid "Message information"
+msgstr "Message information"
+
+#: src/components/sections/ChatTextbox.tsx:138
+msgid "Message is over the maximum allowed length"
+msgstr "Message is over the maximum allowed length"
+
+#. placeholder {0}: "500"
+#: src/components/sections/ChatFeedbackDialog.tsx:41
+msgid "Message is over the maximum allowed length ({0} characters)"
+msgstr "Message is over the maximum allowed length ({0} characters)"
+
+#: src/components/sections/ChatTextbox.tsx:145
+#~ msgid "Message is over the maximum allowed length ({maxWords} words)"
+#~ msgstr "Message is over the maximum allowed length ({maxWords} words)"
+
+#. placeholder {0}: userMessage.mode
+#: src/components/sections/MessageInfoDialog.tsx:21
+msgid "Mode: {0, select, chat {Chat} search {Search} focus {Focus} other {Unknown}}"
+msgstr "Mode: {0, select, chat {Chat} search {Search} focus {Focus} other {Unknown}}"
+
+#: src/components/sections/TokenUsageDialog.tsx:28
+#: src/components/sections/ChatTextbox.tsx:147
+msgid "Model"
+msgstr "Model"
+
+#: src/components/sections/TokenUsageDialog.tsx:93
+msgid "Models tokens usage"
+msgstr "Models tokens usage"
+
+#: src/routes/documents/DocumentsTableCard.tsx:51
+#: src/routes/documents/DocumentsTableCard.tsx:208
+#: src/routes/chats/ChatsTableCard.tsx:25
+#: src/routes/chats/ChatsTableCard.tsx:72
+#: src/components/sections/UserProfileDialog.tsx:164
+#: src/components/sections/DocumentSelectorDialog.tsx:88
+#: src/components/sections/DocumentSelectorDialog.tsx:246
+msgid "Name"
+msgstr "Name"
+
+#: src/components/sections/UserProfileDialog.tsx:65
+#: src/components/forms/chat/NewChatForm.tsx:19
+msgid "Name required"
+msgstr "Name required"
+
+#: src/routes/chats/NewChatDialog.tsx:32
+#: src/routes/chats/NewChatCard.tsx:19
+#: src/routes/chats/ChatsPage.tsx:81
+msgid "New chat"
+msgstr "New chat"
+
+#: src/components/sections/TokenUsageDialog.tsx:37
+msgid "Next reset"
+msgstr "Next reset"
+
+#: src/components/ui/custom/multi-select.tsx:95
+#: src/components/ui/custom/data-table.tsx:77
+msgid "No results."
+msgstr "No results."
+
+#: src/components/sections/DocumentSelectorDialog.tsx:268
+msgid "No selected documents, focus mode requires at least one selected document"
+msgstr "No selected documents, focus mode requires at least one selected document"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:270
+msgid "No selected documents, the search will consider all documents available"
+msgstr "No selected documents, the search will consider all documents available"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:155
+#: src/components/sections/ChatFeedbackDialog.tsx:157
+msgid "Other comments"
+msgstr "Other comments"
+
+#. placeholder {0}: table.getState().pagination.pageIndex + 1
+#. placeholder {1}: table.getPageCount()
+#. placeholder {2}: table.getSelectedRowModel().flatRows.length
+#: src/components/ui/custom/data-table-pagination.tsx:57
+msgid "Page {0} of {1} {2, plural, =0 {} one {(# selected)} other {(# selected)}}"
+msgstr "Page {0} of {1} {2, plural, =0 {} one {(# selected)} other {(# selected)}}"
+
+#. placeholder {0}: pages.length
+#: src/components/ui/custom/document-viewer.tsx:126
+msgid "Page {pageNumber} of {0}"
+msgstr "Page {pageNumber} of {0}"
+
+#: src/routes/login/LoginPage.tsx:83
+msgid "Password"
+msgstr "Password"
+
+#: src/routes/login/LoginPage.tsx:17
+#~ msgid "Password required"
+#~ msgstr "Password required"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/PrivacyPage.tsx:134
+msgid "privacy.page"
+msgstr "Privacy Policy"
+
+#. js-lingui-explicit-id
+#: src/routes/pages/PrivacyPage.tsx:95
+msgid "privacy.index.title"
+msgstr "Privacy Policy Index"
+
+#: src/components/sections/UserProfileDialog.tsx:141
+msgid "Profile"
+msgstr "Profile"
+
+#: src/components/sections/UserProfileDialog.tsx:356
+msgid "Profile correctly updated"
+msgstr "Profile correctly updated"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:89
+msgid "Provide a feedback to improve the conversation"
+msgstr "Provide a feedback to improve the conversation"
+
+#: src/components/sections/TokenUsageDialog.tsx:31
+msgid "Provider"
+msgstr "Provider"
+
+#: src/components/sections/ChatTextbox.tsx:112
+msgid "QA"
+msgstr "Chat"
+
+#. placeholder {0}: userMessage.content
+#: src/components/sections/MessageInfoDialog.tsx:20
+msgid "Question: {0}"
+msgstr "Question: {0}"
+
+#: src/routes/chats/ChatsPage.tsx:78
+#: src/routes/ask/AskPage.tsx:344
+msgid "Recent chats"
+msgstr "Recent chats"
+
+#: src/components/sections/ChatMessages.tsx:161
+msgid "Regenerate"
+msgstr "Regenerate"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:137
+msgid "Relevant sources"
+msgstr "Relevant sources"
+
+#. placeholder {0}: userMessage.documents.length
+#. placeholder {1}: userMessage.documents.map(d => <li key={d.filename}>{ d.filename }</li>)
+#: src/components/sections/MessageInfoDialog.tsx:26
+msgid "Requested sources:<0>{0, plural, =0 {<1>None</1>} other {{1}}}</0>"
+msgstr "Requested sources:<0>{0, plural, =0 {<1>None</1>} other {{1}}}</0>"
+
+#: src/components/sections/UserProfileDialog.tsx:202
+#~ msgid "Role"
+#~ msgstr "Role"
+
+#: src/components/sections/UserProfileDialog.tsx:67
+#~ msgid "Role required"
+#~ msgstr "Role required"
+
+#: src/components/ui/custom/data-table-pagination.tsx:36
+msgid "Rows"
+msgstr "Rows"
+
+#: src/components/sections/ChatTextbox.tsx:103
+#~ msgid "Search"
+#~ msgstr "Search"
+
+#: src/components/ui/custom/data-table-filter.tsx:23
+msgid "Search by {columnName}..."
+msgstr "Search by {columnName}..."
+
+#: src/components/ui/custom/multi-select.tsx:93
+msgid "Search by {objectName}..."
+msgstr "Search by {objectName}..."
+
+#: src/components/ui/custom/multi-select.tsx:82
+msgid "Select {objectName}"
+msgstr "Select {objectName}"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:62
+msgid "Select a storage"
+msgstr "Select a storage"
+
+#: src/components/sections/UserProfileDialog.tsx:66
+msgid "Select at least one group"
+msgstr "Select at least one group"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:61
+msgid "Select at least one group"
+msgstr "Select at least one group"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:301
+msgid "Select documents"
+msgstr "Select documents"
+
+#: src/components/sections/ChatTextbox.tsx:113
+#: src/components/sections/ChatTextbox.tsx:120
+#~ msgid "Select documents {0}"
+#~ msgstr "Select documents {0}"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:302
+msgid "Select documents to work on"
+msgstr "Select documents to work on"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:183
+msgid "Select storage"
+msgstr "Select storage"
+
+#: src/components/sections/ChatTextbox.tsx:108
+msgid "Select your mode"
+msgstr "Select your mode"
+
+#: src/components/sections/ChatTextbox.tsx:96
+msgid "Select your model"
+msgstr "Select your model"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:273
+#: src/components/sections/ChatTextbox.tsx:141
+msgid "Selected documents are over the maximum allowed length"
+msgstr "Selected documents are over the maximum allowed length"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:254
+msgid "Selected documents:"
+msgstr "Selected documents:"
+
+#: src/routes/AppSidebar.tsx:150
+msgid "Settings"
+msgstr "Settings"
+
+#: src/routes/chats/item/ChatPage.tsx:166
+#: src/routes/ask/AskPage.tsx:171
+msgid "Something went wrong, retry or change question."
+msgstr "Something went wrong, retry or change question."
+
+#: src/components/sections/UserProfileDialog.tsx:361
+#: src/components/sections/ChatFeedbackDialog.tsx:170
+msgid "Submit"
+msgstr "Submit"
+
+#: src/components/ui/custom/success-alert.tsx:12
+msgid "Success"
+msgstr "Success"
+
+#: src/routes/AppSidebar.tsx:162
+msgid "System theme"
+msgstr "System theme"
+
+#: src/routes/chats/ChatsTableCard.tsx:49
+msgid "the conversation"
+msgstr "the conversation"
+
+#: src/routes/AppSidebar.tsx:156
+msgid "Theme"
+msgstr "Theme"
+
+#: src/routes/AppSidebar.tsx:203
+#: src/components/sections/TokenUsageDialog.tsx:80
+msgid "Tokens Consumption"
+msgstr "Tokens Consumption"
+
+#: src/components/sections/TokenUsageDialog.tsx:34
+msgid "Tokens reset period"
+msgstr "Tokens reset period"
+
+#: src/components/sections/TokenUsageDialog.tsx:49
+msgid "Tokens usage"
+msgstr "Tokens usage"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:175
+msgid "Total document tokens"
+msgstr "Total document tokens"
+
+#: src/components/sections/DocumentSelectorDialog.tsx:103
+#~ msgid "Total selected documents tokens: {0}"
+#~ msgstr "Total selected documents tokens: {0}"
+
+#. placeholder {0}: selectedDocuments.reduce((a, b) => a + b.totalTokens, 0)
+#. placeholder {1}: Math.floor((selectedModel?.context_window ?? 0) / 4)
+#: src/components/sections/DocumentSelectorDialog.tsx:253
+msgid "Total selected documents tokens: {0} out of {1}"
+msgstr "Total selected documents tokens: {0} out of {1}"
+
+#: src/components/sections/UserProfileDialog.tsx:301
+msgid "Total tokens limit"
+msgstr "Total tokens limit"
+
+#: src/components/sections/UserProfileDialog.tsx:314
+msgid "Total tokens reset period"
+msgstr "Total tokens reset period"
+
+#: src/components/sections/UserProfileDialog.tsx:327
+msgid "Trial expiry date"
+msgstr "Trial expiry date"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:118
+msgid "Understandable answer"
+msgstr "Understandable answer"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:118
+#~ msgid "Understandable answers"
+#~ msgstr "Understandable answers"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:218
+msgid "Upload"
+msgstr "Upload"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:63
+msgid "Upload at least one document"
+msgstr "Upload at least one document"
+
+#: src/components/sections/UserProfileDialog.tsx:221
+msgid "Upload common"
+msgstr "Upload common"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:95
+msgid "Upload documents"
+msgstr "Upload documents"
+
+#: src/routes/documents/UploadDocumentsCard.tsx:96
+msgid "Upload documents to process"
+msgstr "Upload documents to process"
+
+#: src/components/sections/UserProfileDialog.tsx:238
+#~ msgid "Upload private"
+#~ msgstr "Upload private"
+
+#. placeholder {0}: value.length
+#: src/components/ui/custom/styled-dropzone.tsx:40
+msgid "Upload your files by dragging them here or clicking to browse your files.{0, plural, =0 {} other {. Will reset the current selection}}"
+msgstr "Upload your files by dragging them here or clicking to browse your files.{0, plural, =0 {} other {. Will reset the current selection}}"
+
+#: src/routes/documents/DocumentsTableCard.tsx:250
+msgid "Uploaded documents"
+msgstr "Uploaded documents"
+
+#: src/components/sections/ChatTextbox.tsx:119
+#~ msgid "Use documents"
+#~ msgstr "Use documents"
+
+#. placeholder {0}: assistantMessage.sources?.length ?? 0
+#. placeholder {1}: assistantMessage.sources?.map(d => <li key={d.filename}>{ d.filename }</li>)
+#: src/components/sections/MessageInfoDialog.tsx:40
+msgid "Used sources:<0>{0, plural, =0 {<1>None</1>} other {{1}}}</0>"
+msgstr "Used sources:<0>{0, plural, =0 {<1>None</1>} other {{1}}}</0>"
+
+#. placeholder {0}: assistantMessage.metadata.input_tokens
+#. placeholder {1}: assistantMessage.metadata.output_tokens
+#: src/components/sections/MessageInfoDialog.tsx:22
+msgid "Used tokens: {0} (input), {1} (output)"
+msgstr "Used tokens: {0} (input), {1} (output)"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:99
+msgid "Useful answer"
+msgstr "Useful answer"
+
+#: src/routes/AppSidebar.tsx:207
+msgid "user"
+msgstr "user"
+
+#: src/routes/AppSidebar.tsx:197
+msgid "User Data"
+msgstr "User Data"
+
+#: src/routes/documents/DocumentsTableCard.tsx:86
+msgid "Viewing document {name}"
+msgstr "Viewing document {name}"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:119
+msgid "Was the provided answer easy to understand?"
+msgstr "Was the provided answer easy to understand?"
+
+#: src/components/sections/ChatTextbox.tsx:161
+msgid "Web"
+msgstr "Web"
+
+#: src/components/sections/UserProfileDialog.tsx:187
+msgid "Web search"
+msgstr "Web search"
+
+#: src/components/sections/ChatMessages.tsx:107
+msgid "Web sources:"
+msgstr "Web sources:"
+
+#: src/components/sections/ChatFeedbackDialog.tsx:138
+msgid "Were the sources found relevant to your questions?"
+msgstr "Were the sources found relevant to your questions?"
+
+#: src/components/sections/ChatTextbox.tsx:78
+msgid "You are editing a message, any following messages from the selected will be deleted."
+msgstr "You are editing a message, any following messages from the selected will be deleted."
+
+#: src/routes/chats/item/ChatPage.tsx:295
+#: src/routes/ask/AskPage.tsx:290
+msgid "You have run out of time!"
+msgstr "You have run out of time!"
+
+#: src/routes/chats/item/ChatPage.tsx:273
+#: src/routes/ask/AskPage.tsx:268
+msgid "You have run out of tokens!"
+msgstr "You have run out of tokens!"

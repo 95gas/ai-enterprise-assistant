@@ -1,0 +1,4 @@
+docker/.env
+server/config/secrets.env
+server/config/google_credentials.json
+server/config/secret_key.txt

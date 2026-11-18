@@ -1,0 +1,9 @@
+ticket_structure:
+  type:
+    - Incident
+    - Service
+    - Change
+  urgency:
+    - Low
+    - Medium
+    - High

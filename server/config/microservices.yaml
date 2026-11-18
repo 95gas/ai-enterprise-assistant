@@ -1,0 +1,2 @@
+microservices:
+  task_ttl: 86400

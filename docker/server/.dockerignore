@@ -1,0 +1,5 @@
+# the root is defined by the context in the docker-compose.yml
+server/.vscode
+server/__pycache__
+server/database
+server/poppler

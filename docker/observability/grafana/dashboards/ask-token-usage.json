@@ -1,0 +1,724 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "panels": [
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 5,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(*) AS \"Requests\" FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring}));",
+          "refId": "A"
+        }
+      ],
+      "title": "Total Requests",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 5,
+        "x": 5,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COALESCE(SUM(input + output), 0) AS \"Total Tokens\" FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring}));",
+          "refId": "A"
+        }
+      ],
+      "title": "Total Tokens",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "purple",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 5,
+        "x": 10,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COALESCE(SUM(input + output)::numeric / NULLIF(COUNT(*), 0), 0) AS \"Average Tokens / Request\" FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring}));",
+          "refId": "A"
+        }
+      ],
+      "title": "Average Tokens / Request",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "orange",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 5,
+        "x": 15,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COALESCE(MAX(bucket_tokens), 0) AS \"Peak Tokens / Interval\" FROM (SELECT $__timeGroup(timestamp, $__interval) AS bucket, SUM(input + output) AS bucket_tokens FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring})) GROUP BY 1) usage_buckets;",
+          "refId": "A"
+        }
+      ],
+      "title": "Peak Tokens / Interval",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "currencyUSD",
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 20,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COALESCE(SUM(CASE model WHEN 'o4-mini' THEN input * 1.10 + output * 4.40 WHEN 'text-embedding-3-large' THEN output * 0.13 ELSE 0 END) / 1000000.0, 0) AS \"Estimated Cost\" FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring}));",
+          "refId": "A"
+        }
+      ],
+      "title": "Estimated Cost (USD)",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "fillOpacity": 12,
+            "showPoints": "auto",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 16,
+        "x": 0,
+        "y": 4
+      },
+      "id": 10,
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT $__timeGroupAlias(timestamp, $__interval), SUM(input) AS \"Input Tokens\", SUM(output) AS \"Output Tokens\", SUM(input + output) AS \"Total Tokens\" FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring})) GROUP BY 1 ORDER BY 1;",
+          "refId": "A"
+        }
+      ],
+      "title": "Token Consumption Over Time",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "currencyUSD",
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "fillOpacity": 12,
+            "showPoints": "auto",
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 8,
+        "x": 16,
+        "y": 4
+      },
+      "id": 11,
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT $__timeGroupAlias(timestamp, $__interval), SUM(CASE model WHEN 'o4-mini' THEN input * 1.10 + output * 4.40 WHEN 'text-embedding-3-large' THEN output * 0.13 ELSE 0 END) / 1000000.0 AS \"Estimated Cost (USD)\" FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring})) GROUP BY 1 ORDER BY 1;",
+          "refId": "A"
+        }
+      ],
+      "title": "Estimated Cost Over Time",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 0,
+        "y": 13
+      },
+      "id": 20,
+      "options": {
+        "displayLabels": [
+          "name",
+          "percent"
+        ],
+        "legend": {
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT model AS \"Model\", SUM(CASE WHEN '${metric}' = 'cost' THEN CASE model WHEN 'o4-mini' THEN input * 1.10 + output * 4.40 WHEN 'text-embedding-3-large' THEN output * 0.13 ELSE 0 END / 1000000.0 ELSE input + output END) AS value FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring})) GROUP BY model ORDER BY value DESC;",
+          "refId": "A"
+        }
+      ],
+      "title": "Usage by Model",
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 8,
+        "y": 13
+      },
+      "id": 21,
+      "options": {
+        "displayLabels": [
+          "name",
+          "percent"
+        ],
+        "legend": {
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COALESCE(NULLIF(label, ''), '(unlabeled)') AS \"Label\", SUM(CASE WHEN '${metric}' = 'cost' THEN CASE model WHEN 'o4-mini' THEN input * 1.10 + output * 4.40 WHEN 'text-embedding-3-large' THEN output * 0.13 ELSE 0 END / 1000000.0 ELSE input + output END) AS value FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring})) GROUP BY 1 ORDER BY value DESC;",
+          "refId": "A"
+        }
+      ],
+      "title": "Usage by Label",
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 16,
+        "y": 13
+      },
+      "id": 22,
+      "options": {
+        "displayLabels": [
+          "name",
+          "percent"
+        ],
+        "legend": {
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT \"user\" AS \"User\", SUM(CASE WHEN '${metric}' = 'cost' THEN CASE model WHEN 'o4-mini' THEN input * 1.10 + output * 4.40 WHEN 'text-embedding-3-large' THEN output * 0.13 ELSE 0 END / 1000000.0 ELSE input + output END) AS value FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring})) GROUP BY \"user\" ORDER BY value DESC;",
+          "refId": "A"
+        }
+      ],
+      "title": "Usage by User",
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "postgres"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 21
+      },
+      "id": 30,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "Time"
+          }
+        ]
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT $__timeGroup(timestamp, $__interval) AS \"Time\", \"user\" AS \"User\", model AS \"Model\", label AS \"Label\", COUNT(*) AS \"Requests\", SUM(input) AS \"Input Tokens\", SUM(output) AS \"Output Tokens\", SUM(input + output) AS \"Total Tokens\", SUM(CASE model WHEN 'o4-mini' THEN input * 1.10 + output * 4.40 WHEN 'text-embedding-3-large' THEN output * 0.13 ELSE 0 END) / 1000000.0 AS \"Estimated Cost (USD)\" FROM token_usage WHERE $__timeFilter(timestamp) AND ('${user:raw}' = 'All' OR \"user\" IN (${user:sqlstring})) AND ('${model:raw}' = 'All' OR model IN (${model:sqlstring})) AND ('${label:raw}' = 'All' OR label IN (${label:sqlstring})) GROUP BY 1, 2, 3, 4 ORDER BY 1 DESC;",
+          "refId": "A"
+        }
+      ],
+      "title": "Token Usage Details",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "grafana",
+        "uid": "-- Grafana --"
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 24,
+        "x": 0,
+        "y": 31
+      },
+      "id": 31,
+      "options": {
+        "mode": "markdown",
+        "content": "### Cost estimate\n\nEstimated cost follows the existing dashboard rates: `o4-mini` at $1.10 / 1M input tokens and $4.40 / 1M output tokens; `text-embedding-3-large` at $0.13 / 1M output tokens. Other models are shown as $0.00 because no price is configured. Update these rates in this dashboard when provider pricing changes. This is an estimate, not a billing statement.",
+        "showTitle": false
+      },
+      "title": "",
+      "type": "text"
+    }
+  ],
+  "refresh": "5m",
+  "schemaVersion": 39,
+  "tags": [
+    "ask",
+    "tokens",
+    "usage",
+    "analytics"
+  ],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": true,
+          "text": "All",
+          "value": "All"
+        },
+        "includeAll": true,
+        "allValue": "All",
+        "label": "User",
+        "multi": true,
+        "name": "user",
+        "options": [],
+        "query": "SELECT DISTINCT \"user\" AS \"__text\", \"user\" AS \"__value\" FROM token_usage ORDER BY 1;",
+        "refresh": 1,
+        "type": "query",
+        "datasource": {
+          "type": "postgres",
+          "uid": "postgres"
+        },
+        "definition": "SELECT DISTINCT \"user\" AS \"__text\", \"user\" AS \"__value\" FROM token_usage ORDER BY 1;",
+        "hide": 0,
+        "sort": 1
+      },
+      {
+        "current": {
+          "selected": true,
+          "text": "All",
+          "value": "All"
+        },
+        "includeAll": true,
+        "allValue": "All",
+        "label": "Model",
+        "multi": true,
+        "name": "model",
+        "options": [],
+        "query": "SELECT DISTINCT model AS \"__text\", model AS \"__value\" FROM token_usage ORDER BY 1;",
+        "refresh": 1,
+        "type": "query",
+        "datasource": {
+          "type": "postgres",
+          "uid": "postgres"
+        },
+        "definition": "SELECT DISTINCT model AS \"__text\", model AS \"__value\" FROM token_usage ORDER BY 1;",
+        "hide": 0,
+        "sort": 1
+      },
+      {
+        "current": {
+          "selected": true,
+          "text": "All",
+          "value": "All"
+        },
+        "includeAll": true,
+        "allValue": "All",
+        "label": "Label",
+        "multi": true,
+        "name": "label",
+        "options": [],
+        "query": "SELECT DISTINCT label AS \"__text\", label AS \"__value\" FROM token_usage ORDER BY 1;",
+        "refresh": 1,
+        "type": "query",
+        "datasource": {
+          "type": "postgres",
+          "uid": "postgres"
+        },
+        "definition": "SELECT DISTINCT label AS \"__text\", label AS \"__value\" FROM token_usage ORDER BY 1;",
+        "hide": 0,
+        "sort": 1
+      },
+      {
+        "current": {
+          "selected": true,
+          "text": "Tokens",
+          "value": "tokens"
+        },
+        "hide": 0,
+        "label": "Breakdown",
+        "name": "metric",
+        "options": [
+          {
+            "selected": true,
+            "text": "Tokens",
+            "value": "tokens"
+          },
+          {
+            "selected": false,
+            "text": "Cost (USD)",
+            "value": "cost"
+          }
+        ],
+        "query": "tokens,cost",
+        "type": "custom"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "ASK Token Usage",
+  "uid": "ask-token-usage",
+  "version": 1
+}

@@ -1,0 +1,2 @@
+- convert to pydandic agent using a sentence-transformer llm or ollama
+- remove any references to mirai and 'ask'

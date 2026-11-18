@@ -1,0 +1,9 @@
+THEME: mirai
+
+system:
+  port: 8080
+  device: cpu
+  allowed_origins:
+    - http://localhost:5173
+    - http://172.26.255.2:5173
+    - http://172.26.255.3:5173

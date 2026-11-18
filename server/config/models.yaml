@@ -1,0 +1,24 @@
+models_info:
+  providers:
+    huggingface:
+      demo_chat:
+        actual_model_name: google/gemma-3-270m-it
+        context_window: 4096
+      demo_embedder:
+        actual_model_name: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+        embedding_dimensions: 384
+  chat_models:
+    - provider: huggingface
+      custom_name: demo_chat
+  embedder_model:
+    provider: huggingface
+    custom_name: demo_embedder
+  helper_model:
+    provider: huggingface
+    custom_name: demo_chat
+  doc_model:
+    provider: huggingface
+    custom_name: demo_chat
+  vision_model:
+    provider: huggingface
+    custom_name: demo_chat

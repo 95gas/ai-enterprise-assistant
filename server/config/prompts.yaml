@@ -1,0 +1,4 @@
+prompts_keys:
+  app_name: "AI Assistant"
+
+step_streaming: {}

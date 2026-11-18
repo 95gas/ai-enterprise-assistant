@@ -1,0 +1,19 @@
+credentials:
+  default_values:
+    tot_token_limit: 10000
+    expiring_date_trial: "2100/12/31 00:00:00"
+    tot_limit_reset_period: day
+  roles:
+    editor:
+      - editoruser@demo.com
+    viewer:
+      - vieweruser@demo.com
+  groups:
+    demoextend@gmail.com:
+      mode: extend
+      groups:
+        - group_to_add
+    demosubstitute@gmail.com:
+      mode: substitute
+      groups:
+        - newly_assigned_group
