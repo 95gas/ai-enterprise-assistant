@@ -2,7 +2,7 @@
 
 **Enterprise Multi-Agent Hybrid RAG & Conversational AI Platform**
 
-`qa-multiagents-rag` is a full-stack, microservices-based Retrieval-Augmented Generation (RAG) and agentic AI system built for regulated enterprise environments. It combines **Hybrid Retrieval** (dense vector search + Neo4j Knowledge Graph traversal + reranking), **multi-agent orchestration** with Model Context Protocol (MCP) tools, **multimodal document ingestion**, **NVIDIA NeMo Guardrails & PII redaction**, **durable Temporal workflows**, and a **white-label React/TypeScript web application**.
+`ai-multiagents-enterprise-assistant` is a full-stack, microservices-based Retrieval-Augmented Generation (RAG) and agentic AI system built for regulated enterprise environments. It combines **Hybrid Retrieval** (dense vector search + Neo4j Knowledge Graph traversal + reranking), **multi-agent orchestration** with Model Context Protocol (MCP) tools, **multimodal document ingestion**, **NVIDIA NeMo Guardrails & PII redaction**, **durable Temporal workflows**, and a **white-label React/TypeScript web application**.
 
 ---
 
@@ -46,7 +46,7 @@ flowchart TB
 ## Repository Structure
 
 ```text
-qa-multiagents-rag/
+ai-multiagents-enterprise-assistant/
 ├── client/                     # React + TypeScript + Vite SPA frontend
 │   ├── config/                 # White-label tenant configurations (default, carraro, mirai, necto)
 │   └── src/                    # Components, API clients, Lingui locales (en/it/zh), routes
@@ -81,8 +81,8 @@ Ensure the following tools are installed on your machine before proceeding:
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd qa-multiagents-rag
+git clone https://github.com/95gas/ai-enterprise-assistant
+cd ai-multiagents-enterprise-assistant
 ```
 
 ### 2. Initialize Environment & Secret Templates
