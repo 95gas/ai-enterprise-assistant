@@ -1,6 +1,6 @@
 # Multi-Agent Orchestration, MCP Tools & Workflows
 
-The conversational intelligence of **`qa-multiagents-rag`** lives inside `server/src/services/chat/`. Rather than relying on a single monolithic prompt, the platform decomposes user requests across **specialized domain agents**, **structured execution workflows**, and **Model Context Protocol (MCP) tools**.
+The conversational intelligence of **`ai-multiagents-assistant`** lives inside `server/src/services/chat/`. Rather than relying on a single monolithic prompt, the platform decomposes user requests across **specialized domain agents**, **structured execution workflows**, and **Model Context Protocol (MCP) tools**.
 
 ---
 
