@@ -1,4 +1,4 @@
-# `qa-multiagents-rag`
+# `ai-multiagents-enterprise-assistant`
 
 **Enterprise Multi-Agent Hybrid RAG & Conversational AI Platform**
 
