@@ -1,6 +1,6 @@
 # System & Microservices Architecture
 
-`qa-multiagents-rag` is designed as a modular, service-oriented architecture (SOA) where an API Gateway coordinates specialized backend microservices, durable Temporal workers, and polyglot persistence stores.
+`ai-multiagents-assistant` is designed as a modular, service-oriented architecture (SOA) where an API Gateway coordinates specialized backend microservices, durable Temporal workers, and polyglot persistence stores.
 
 ---
 
