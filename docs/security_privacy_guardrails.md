@@ -1,6 +1,6 @@
 # Security, Privacy, PII Redaction & Guardrails
 
-`qa-multiagents-rag` is built for regulated enterprise environments where data confidentiality, prompt injection defense, and strict access controls are mandatory. Security controls are enforced across four concentric layers.
+`ai-multiagents-assistant` is built for regulated enterprise environments where data confidentiality, prompt injection defense, and strict access controls are mandatory. Security controls are enforced across four concentric layers.
 
 ---
 
