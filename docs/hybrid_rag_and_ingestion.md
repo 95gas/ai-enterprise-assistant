@@ -1,6 +1,6 @@
 # Hybrid RAG Engine & Document Ingestion Pipeline
 
-`qa-multiagents-rag` implements a **two-stage decoupled ingestion pipeline** (`md_maker` $\rightarrow$ `md_ingestor`) paired with a **Hybrid Retrieval-Augmented Generation (`rag`) service** that fuses dense vector similarity search with Neo4j Knowledge Graph traversal and neural/LLM reranking.
+`ai-multiagents-assistant` implements a **two-stage decoupled ingestion pipeline** (`md_maker` $\rightarrow$ `md_ingestor`) paired with a **Hybrid Retrieval-Augmented Generation (`rag`) service** that fuses dense vector similarity search with Neo4j Knowledge Graph traversal and neural/LLM reranking.
 
 ---
 
